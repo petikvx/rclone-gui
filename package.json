@@ -1,0 +1,14 @@
+{
+  "name": "rclone-gui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "start": "node apps/server/src/index.js",
+    "build": "npm run build -w web"
+  },
+  "workspaces": [
+    "apps/web",
+    "apps/server"
+  ]
+}
